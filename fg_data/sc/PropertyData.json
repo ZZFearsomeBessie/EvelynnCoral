@@ -9,7 +9,7 @@
         "DateType": "int",
         "UiDesc": "4301",
         "ID": 2,
-        "Name": "基础坚韧"
+        "Name": "Stamina"
     },
     {
         "DateType": "float",
@@ -33,7 +33,7 @@
         "DateType": "int",
         "UiDesc": "4302",
         "ID": 6,
-        "Name": "基础操控"
+        "Name": "Control"
     },
     {
         "DateType": "float",
@@ -57,7 +57,7 @@
         "DateType": "int",
         "UiDesc": "4303",
         "ID": 10,
-        "Name": "基础忍耐"
+        "Name": "Endurance"
     },
     {
         "DateType": "float",
@@ -81,7 +81,7 @@
         "DateType": "int",
         "UiDesc": "4304",
         "ID": 14,
-        "Name": "基础反应"
+        "Name": "Reaction"
     },
     {
         "DateType": "float",
@@ -105,7 +105,7 @@
         "DateType": "int",
         "UiDesc": "4305",
         "ID": 18,
-        "Name": "基础技巧"
+        "Name": "Technique"
     },
     {
         "DateType": "float",

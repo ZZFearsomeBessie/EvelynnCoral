@@ -270,7 +270,7 @@
                     </div>
                     <hr />
                     <div v-if="lp_lst">
-                        <div style="display: flex; padding: 10px;" v-for="lp in lp_lst">
+                        <div style="padding: 10px;" v-for="lp in lp_lst">
                             <span>{{calc_property_name(lp.key)}}</span>
                             <div style="margin-left: 10px; flex-grow: 1; border: 1px solid black; text-align: center; position: relative;">
                                 <div style="height: 100%; position: absolute;" v-bind:style='{width: (lp.value * 100 / max_lp) + "%", background: property_color[lp.key]}'></div>

@@ -108,7 +108,7 @@
         <div id="fgPilot" v-loading="!loaded" style="max-width: 1000px;">
             <el-menu :default-active="now_index" class="el-menu-demo" mode="horizontal" @select="handle_select">
                 <el-menu-item index="mainpage">Home</el-menu-item>
-                <el-menu-item index="pilot">Pilot List</el-menu-item>
+                <el-menu-item index="pilot">Pilots</el-menu-item>
             </el-menu>
             <el-autocomplete v-model="search_input" style="margin-top: 10px; width: 100%;" placeholder="请输入机师名" :fetch-suggestions="query_pilot" @select="pilot_handle_select"></el-autocomplete>
             <div>
@@ -161,9 +161,9 @@
                         <span style="grid-area: name;">
                             {{calc_language(selected_pilot.Name)}}
                         </span>
-                        <span style="grid-area: enName;">
+                        <!-- <span style="grid-area: enName;">
                             {{selected_pilot.EnglishName}}
-                        </span>
+                        </span> -->
                         <div style="grid-area: star; font-size: 18px;">
                             <i @click="set_star(-1)" class="el-icon-remove-outline"></i>
                             <i v-for="star in max_star" @click="selected_star = star" :class="check_star_a(star)"></i>
@@ -355,7 +355,7 @@
                 <div style="margin: 10px;">
                     <div style="display: flex; justify-content: space-between;">
                         <span>Skills</span>
-                        <el-switch v-if="selected_pilot_skill_array" v-model="unpacker_mode" active-color="#13ce66" inactive-color="#ff4949" active-text="Normal Mode" inactive-text="Full Mode"></el-switch>
+                        <el-switch v-if="selected_pilot_skill_array" v-model="unpacker_mode" active-color="#13ce66" inactive-color="#ff4949" active-text="UR Mode" inactive-text="Non UR Mode"></el-switch>
                     </div>
                     <div v-for="(skill, idx) in selected_pilot_skill_array">
                         <hr />

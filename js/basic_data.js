@@ -106,7 +106,10 @@ var camp =
 	"Arita",
 	"Kegha",
 	"NoGenera",
-	"NERV"
+	"Nerv",
+	"Nerv2",
+	"Wille",
+	"Sakura"
 ]
 
 var kindness_gift = 
